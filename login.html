@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЦ "МАНГО" | ВХОД</title>
+    <link rel="stylesheet" href="/template/css/style.css">
+    <link rel="icon" type="image/png" href="/template/icons/icon.png">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            var password = document.getElementById('pass')
+            var hidepass = document.getElementById('hide');
+            var visionpass = document.getElementById('vision');
+            showpass = () => {
+            if (password.type == 'password'){
+
+                password.setAttribute('type', 'text');
+                hidepass.classList.add('hidden');
+                visionpass.classList.remove('hidden');
+                
+            }else{
+                password.setAttribute('type', 'password');
+                hidepass.classList.remove('hidden');
+                visionpass.classList.add('hidden');
+            }};
+            hidepass.addEventListener('click', showpass);
+            visionpass.addEventListener('click', showpass);
+        });
+    </script>
+    </head>
+<body class="log_body">
+    <div class="authorization">
+        <img class="authorization__logo" src="/template/icons/img/logo.png" alt="logo">
+        <form action="">
+
+            <div class="authorization__input">
+                <input type="text" placeholder="ЛОГИН">
+             <img class="authorization__user" src="/template/icons/user.png" alt="username">
+            </div>
+            <div class="authorization__input"><input id="pass" type="password"  placeholder="пароль">
+            <img class="authorization__user" src="/template/icons/password.png" alt="username">
+            <img class="authorization__password" id="hide" src="/template/icons/eye_hid.png" alt="hidden">
+            <img class="authorization__password hidden" id="vision" src="/template/icons/eye_vis.png" alt="visible">
+        </div>      
+            
+            <button type="submit">ВХОД</button>
+            <a href="/registration.html">Регистрация</a>
+
+        </form>
+    </div>
+    
+</body>
+    
+</html>

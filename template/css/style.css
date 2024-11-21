@@ -84,6 +84,11 @@ body {
   align-items: center;
   gap: 60px;
 }
+@media (max-width: 420px) {
+  .authorization {
+    padding-top: 80px;
+  }
+}
 .authorization form {
   display: flex;
   flex-direction: column;
@@ -151,6 +156,10 @@ body {
 .authorization a {
   margin-top: -20px;
   color: #2F8F38;
+}
+
+.index_body {
+  position: relative;
 }
 
 header {
@@ -246,9 +255,6 @@ header .burger {
   gap: 4px;
   cursor: pointer;
 }
-header .burger :active {
-  animation: change-background 4s ease infinite;
-}
 header .burger img {
   width: 30px;
   height: auto;
@@ -269,7 +275,7 @@ header .burger #bottom {
   transition: transform 0.3s;
   transition-delay: 0.2s;
 }
-header .burger.open #top, header .burger.open #middle, header .burger.open #bottom {
+header .open #top, header .open #middle, header .open #bottom {
   transform: translateX(50px);
 }
 header nav {
@@ -302,4 +308,87 @@ header nav a {
 header nav #active {
   color: #e9592c;
   text-decoration: underline;
+}
+
+.burger_menu {
+  position: absolute;
+  top: 0px;
+  background-color: #3a3a3a;
+  width: 100%;
+  height: 100vh;
+  left: -1000px;
+  transition: transform 1.5s;
+  z-index: 2;
+}
+.burger_menu .navig {
+  position: relative;
+  margin-left: 35px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 80px;
+}
+.burger_menu .navig a {
+  color: #e9592c;
+  text-decoration: underline;
+  width: 100px;
+}
+.burger_menu img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.full {
+  transform: translateX(1000px);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+.slider ul li {
+  position: relative;
+  height: 100%;
+  float: left;
+}
+.slider #prev, .slider #next {
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+.slider #prev {
+  left: 10px;
+}
+.slider #next {
+  right: 10px;
+}
+.slider #prev:hover, .slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЦ "МАНГО" | АРЕНДАТОРАМ</title>
+    <link rel="stylesheet" href="/template/css/style.css">
+    <link rel="icon" type="image/png" href="/template/icons/icon.png">
+    <script src="/template/js/slider.js"></script>
+</head>
+<body class="shops_body">
+    <div class="wrapper"><header>
+        <div class="_container header">
+            <a href="/index.html"><img src="/template/icons/img/logo.png" alt="logo"></a>
+        <div class="search">
+            <input type="search" placeholder="ПОИСК ПО САЙТУ">
+            <img src="/template/icons/search.png" alt="search">
+        </div>
+        <nav>
+
+            <a href="shops.html" >МАГАЗИНЫ</a>
+            <a href="contacts.html" >КОНТАКТЫ</a>
+            <a href="arenda.html" id="active">АРЕНДАТОРАМ</a>
+            <a href="login.html">ВХОД</a>
+
+        </nav>
+        <div class="burger">
+            <img id="top" src="/template/icons/burger top.png" alt="top">
+            <img id="middle" src="/template/icons/burger middle.png" alt="middle">
+            <img id="bottom" src="/template/icons/burger bottom.png" alt="bottom">
+        </div>
+        
+        </div>
+       
+    </header>
+    <div class="burger_menu">
+        <img src="/template/icons/exit.png" alt="exit">
+        <div class="navig">
+            <a href="shops.html">МАГАЗИНЫ</a>
+            <a href="contacts.html">КОНТАКТЫ</a>
+            <a href="arenda.html">АРЕНДАТОРАМ</a>
+            <a href="login.html">ВХОД</a>
+
+        </div>
+    </div>
+
+    <main class="main _container">
+        
+        <div class="arenda">
+            <h1>Хочешь открыть свой магазин или нужна реклама?</h1>
+            <p>ТЦ «МАНГО» - отличное решение! Всё объясним и расскажем!</p>
+            <div class="tel">
+                <img src="/template/icons/tele.png" alt="tel">
+                <div class="info_tel">
+                    <a href="tel:8(83147)9-59-32">8 (83147) 9-59-32</a>
+                    <a href="tel:8(910)121-15-30">8 (910) 121-15-30</a>
+                </div>
+            </div>
+            <div class="ema">
+                <img src="/template/icons/email.png" alt="tel">
+                <div class="info_tel">
+                    <a href="mailto:mangomarketing@mail.ru">mangomarketing@mail.ru</a>
+                    <a href="mailto:mangoarz@mail.ru">mangoarz@mail.ru</a>
+                </div>
+            </div>
+            <h1>Есть замечания?</h1>
+            <p>По всем общим вопросам, замечаниям и предложениям</p>
+            <div class="tel">
+                <img src="/template/icons/tele.png" alt="tel">
+                <div class="info_tel">
+                    <a href="tel:8(910)385-29-67">8 (910) 385-29-67</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer _container">
+
+            <div class="link">
+                <h3>МЫ В</h3>
+                <a href="#"><img src="/template/icons/vk.png" alt="vk"></a>
+                <a href="#"><img src="/template/icons/insta.png" alt="inst"></a>
+                <a href="#"><img src="/template/icons/ok.png" alt="ok"></a>
+            </div>
+
+            <h3>
+                ©тц манго 2024
+            </h3>
+
+            <div id='my_time'></div>
+            <script>
+                var time = document.getElementById('my_time');
+            setInterval(function(){
+              var d = new Date();
+              time.innerHTML = d.getHours() + ':' + d.getMinutes() +   ' ' + d.getDate() + '.' + (d.getUTCMonth() + 1) + '.' + d.getFullYear() 
+              
+            }, 950);
+            </script>
+            
+        </div>
+
+    </footer>
+    
+
+</div>
+    
+
+<script src="./template/js/scripts.js"></script>
+</body>
+    
+</html>

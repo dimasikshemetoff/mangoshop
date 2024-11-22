@@ -1,0 +1,63 @@
+.arenda{
+    @media (max-width: 390px) {
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        color: #e9592c;
+    }
+    p{
+        font-size: 20pt;
+        @media (max-width: 390px) {
+            font-size: 12pt;
+        }
+
+    }
+    .tel{
+        padding-top: 37px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        
+        .info_tel{
+            display: flex;
+            flex-direction: column;
+            
+            font-size: 32pt;
+            @media (max-width: 390px) {
+                font-size: 12pt;
+            }
+            a{
+                color: #2F8F38;
+                text-decoration: underline;
+            }
+        }
+    }
+    .ema{
+        padding-top: 37px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        .info_tel{
+            display: flex;
+            flex-direction: column;
+            
+            font-size: 32pt;
+            @media (max-width: 390px) {
+                font-size: 12pt;
+            }
+            a{
+                color: #2F8F38;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+footer{
+    @media (max-width: 390px) {
+        margin-top: calc(100vh - 85vh);
+    }
+}

@@ -38,6 +38,10 @@ body {
   min-height: 100%;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 ._container {
   max-width: 1430px;
   margin: 0px auto;
@@ -281,7 +285,7 @@ header .open #top, header .open #middle, header .open #bottom {
 }
 header nav {
   display: flex;
-  gap: 70px;
+  gap: 50px;
 }
 @media (max-width: 1300px) {
   header nav {
@@ -313,7 +317,8 @@ header nav #active {
 
 .burger_menu {
   position: absolute;
-  top: 0px;
+  top: 0;
+  right: 0px;
   background-color: #3a3a3a;
   width: 100%;
   height: 100vh;
@@ -355,10 +360,21 @@ header nav #active {
   font-family: "FE MussyPussy";
   padding: 37px 0px;
 }
+@media (max-width: 390px) {
+  .main h1 {
+    font-size: 20pt;
+    text-align: center;
+  }
+}
 .main p {
   color: black;
   text-align: justify;
   font-size: 20pt;
+}
+@media (max-width: 390px) {
+  .main p {
+    font-size: 12pt;
+  }
 }
 .main .news {
   display: flex;
@@ -384,6 +400,28 @@ header nav #active {
 .main .news .news_item p {
   width: 420px;
 }
+@media (max-width: 390px) {
+  .main .news .news_item {
+    font-size: 20pt;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main .news .news_item h2 {
+    font-size: 20pt;
+  }
+  .main .news .news_item p {
+    width: 100%;
+  }
+  .main .news .news_item img {
+    border-radius: 20px;
+    width: 200px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+}
 
 .slider {
   position: relative;
@@ -392,6 +430,14 @@ header nav #active {
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+}
+@media (max-width: 390px) {
+  .slider {
+    height: 200px;
+  }
+  .slider img {
+    width: 50%;
+  }
 }
 .slider ul {
   position: relative;
@@ -448,11 +494,25 @@ footer .footer {
 footer .footer #my_time {
   font-size: 16pt;
 }
+@media (max-width: 390px) {
+  footer .footer #my_time {
+    display: none;
+  }
+}
 footer .footer .link {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 7px;
+}
+@media (max-width: 390px) {
+  footer .footer {
+    font-size: 8pt;
+    text-wrap: nowrap;
+  }
+  footer .footer img {
+    transform: scale(0.7);
+  }
 }
 
 .hall_list {
@@ -461,6 +521,7 @@ footer .footer .link {
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
 }
 .hall_list_item {
@@ -492,6 +553,11 @@ footer .footer .link {
   flex-direction: column;
   gap: 37px;
 }
+@media (max-width: 390px) {
+  .contact {
+    text-align: center;
+  }
+}
 .contact h1 {
   color: #E9592C;
 }
@@ -499,6 +565,11 @@ footer .footer .link {
   color: black;
   font-size: 24pt;
   font-family: "FE MussyPussy";
+}
+@media (max-width: 390px) {
+  .contact h3 {
+    font-size: 12pt;
+  }
 }
 .contact .email {
   display: flex;
@@ -511,6 +582,11 @@ footer .footer .link {
   text-decoration: underline;
   color: #2F8F38;
 }
+@media (max-width: 390px) {
+  .contact a {
+    font-size: 12pt;
+  }
+}
 .contact .time a {
   color: #E9592C;
   text-decoration: none;
@@ -519,6 +595,12 @@ footer .footer .link {
 .iframe {
   margin-top: 150px;
   border: 2px solid black;
+}
+@media (max-width: 390px) {
+  .iframe {
+    width: 100%;
+    margin-top: 37px;
+  }
 }
 
 .content {
@@ -533,4 +615,87 @@ footer .footer .link {
   align-items: center;
   color: #E9592C;
   gap: 7px;
+}
+@media (max-width: 390px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .arenda {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.arenda h1 {
+  color: #e9592c;
+}
+.arenda p {
+  font-size: 20pt;
+}
+@media (max-width: 390px) {
+  .arenda p {
+    font-size: 12pt;
+  }
+}
+.arenda .tel {
+  padding-top: 37px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.arenda .tel .info_tel {
+  display: flex;
+  flex-direction: column;
+  font-size: 32pt;
+}
+@media (max-width: 390px) {
+  .arenda .tel .info_tel {
+    font-size: 12pt;
+  }
+}
+.arenda .tel .info_tel a {
+  color: #2F8F38;
+  text-decoration: underline;
+}
+.arenda .ema {
+  padding-top: 37px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.arenda .ema .info_tel {
+  display: flex;
+  flex-direction: column;
+  font-size: 32pt;
+}
+@media (max-width: 390px) {
+  .arenda .ema .info_tel {
+    font-size: 12pt;
+  }
+}
+.arenda .ema .info_tel a {
+  color: #2F8F38;
+  text-decoration: underline;
+}
+
+@media (max-width: 390px) {
+  footer {
+    margin-top: 15vh;
+  }
+}
+
+@font-face {
+  font-family: "FE MussyPussy";
+  src: url(/template/fonts/FEMussyPussy-Regular.ttf);
+}
+@font-face {
+  font-family: "Zametka_Parletter";
+  src: url(/template/fonts/Zametka_Parletter.otf);
 }/*# sourceMappingURL=style.css.map */

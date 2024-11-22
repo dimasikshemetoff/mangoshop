@@ -45,20 +45,74 @@
     </div>
 
 
-    <main class="_container">
+    <main class="main _container">
         <div class="slider">
             <ul id="slideWrap"> 
                 <li><img src="/template/icons/img/image.png" alt=""></li>
-                <li><img src="/template/icons/img/image.png" alt=""></li>
-                <li><img src="/template/icons/img/image.png" alt=""></li>
-                <li><img src="/template/icons/img/image.png" alt=""></li>
-                <li><img src="/template/icons/img/image.png" alt=""></li>
-                <li><img src="/template/icons/img/image.png" alt=""></li>
+
               </ul>
               <a id="prev" href="#">&#8810;</a>
             <a id="next" href="#">&#8811;</a>
         </div>
+
+        <h1>ТОРГОВЫЙ ЦЕНТР "МАНГО"</h1>
+        <p>Торговый центр «Манго» имеет выгодное географическое месторасположение, находясь на одной из самых оживленных улиц города, с хорошо развитой инфраструктурой.<br><br>
+
+            Общая площадь ТЦ – 9 500 кв.м., торговая – 5 300 кв.м.
+            <br><br>
+            Отделы ТЦ «Манго» располагаются на 4-х этажах, включая цоколь. Для удобства покупателей и арендаторов установлены эскалатор, лифт и подъемник.
+            <br><br>
+            Возле торгового центра расположена парковка на 100 автомобилей с удобным заездом.
+            <br><br>
+            Покупатели со всего города и района приезжают в «Манго», чтобы воспользоваться всем, что может предложить этот торговый центр.</p>
+        <h1>НОВОСТИ ТЦ</h1>
+
+        <div class="news">
+            <div class="news_item">
+                <h2>Новый магазин!</h2>
+                <p>В нашем торговом центре открылся магазин любимец. Всё для ваших домашних питомцев</p>
+                <img src="/template/icons/img/news.png" alt="news">
+            </div>
+            <div class="news_item">
+                <h2>Новый магазин!</h2>
+                <p>В нашем торговом центре открылся магазин любимец. Всё для ваших домашних питомцев</p>
+                <img src="/template/icons/img/news.png" alt="news">
+            </div>
+            <div class="news_item">
+                <h2>Новый магазин!</h2>
+                <p>В нашем торговом центре открылся магазин любимец. Всё для ваших домашних питомцев</p>
+                <img src="/template/icons/img/news.png" alt="news">
+            </div>
+            <center><b>1</b> 2 3</center>
+        </div>
     </main>
+    <footer>
+        <div class="footer _container">
+
+            <div class="link">
+                <h3>МЫ В</h3>
+                <a href="#"><img src="/template/icons/vk.png" alt="vk"></a>
+                <a href="#"><img src="/template/icons/insta.png" alt="inst"></a>
+                <a href="#"><img src="/template/icons/ok.png" alt="ok"></a>
+            </div>
+
+            <h3>
+                ©тц манго 2024
+            </h3>
+
+            <div id='my_time'></div>
+            <script>
+                var time = document.getElementById('my_time');
+            setInterval(function(){
+              var d = new Date();
+              time.innerHTML = d.getHours() + ':' + d.getMinutes() +   ' ' + d.getDate() + '.' + (d.getUTCMonth() + 1) + '.' + d.getFullYear() 
+              
+            }, 950);
+            </script>
+            
+        </div>
+
+    </footer>
 
 </div>
     

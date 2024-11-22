@@ -1,0 +1,50 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    h1{
+        color: #E9592C;
+    }
+    h3{
+        color: black;
+        font-size: 24pt;
+        font-family: 'FE MussyPussy';
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        
+    }
+     a{  
+        padding-top: 10px;
+        display: block;
+            font-size: 24pt;
+            text-decoration: underline;
+            color: #2F8F38;
+        }
+
+    .time{
+        a{
+            color: #E9592C;
+            text-decoration: none;
+        }
+    }
+}
+.iframe{
+    margin-top: 150px;
+    border: 2px solid black;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .link{
+        display: flex;
+        padding-top: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        color: #E9592C;
+        gap: 7px;
+    }
+}
+       
